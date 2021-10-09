@@ -1,18 +1,15 @@
-﻿// SinOfNum.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+﻿// POfRectangleWithSandB.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
 
 #include <iostream>
-#define _USE_MATH_DEFINES
-#include <math.h> 
 using namespace std;
 
 int main()
 {
-    int a;
-    cout << "Enter angle in degrees\n";
-    cin >> a;
-    cout << sin(a * M_PI/ 180);
-
+	int s, width;
+	cout << "Enter square and width\n";
+	cin >> s >> width;
+	cout << 2 * (width + (s * 100 / width));
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
