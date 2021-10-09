@@ -23,6 +23,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "POfRectangleWithSandB", "PO
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ChickensAndEggs", "ChickensAndEggs\ChickensAndEggs.vcxproj", "{80253E36-D497-418D-844A-2888721D184F}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "NumOfFailsInLetter", "NumOfFailsInLetter\NumOfFailsInLetter.vcxproj", "{15428BF7-5F82-4EFB-8BC5-BCFFEDC81E3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -95,6 +97,14 @@ Global
 		{80253E36-D497-418D-844A-2888721D184F}.Release|x64.Build.0 = Release|x64
 		{80253E36-D497-418D-844A-2888721D184F}.Release|x86.ActiveCfg = Release|Win32
 		{80253E36-D497-418D-844A-2888721D184F}.Release|x86.Build.0 = Release|Win32
+		{15428BF7-5F82-4EFB-8BC5-BCFFEDC81E3D}.Debug|x64.ActiveCfg = Debug|x64
+		{15428BF7-5F82-4EFB-8BC5-BCFFEDC81E3D}.Debug|x64.Build.0 = Debug|x64
+		{15428BF7-5F82-4EFB-8BC5-BCFFEDC81E3D}.Debug|x86.ActiveCfg = Debug|Win32
+		{15428BF7-5F82-4EFB-8BC5-BCFFEDC81E3D}.Debug|x86.Build.0 = Debug|Win32
+		{15428BF7-5F82-4EFB-8BC5-BCFFEDC81E3D}.Release|x64.ActiveCfg = Release|x64
+		{15428BF7-5F82-4EFB-8BC5-BCFFEDC81E3D}.Release|x64.Build.0 = Release|x64
+		{15428BF7-5F82-4EFB-8BC5-BCFFEDC81E3D}.Release|x86.ActiveCfg = Release|Win32
+		{15428BF7-5F82-4EFB-8BC5-BCFFEDC81E3D}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -107,6 +117,7 @@ Global
 		{BE83B2A4-EBFD-4CA8-B9C5-518D8F3D2756} = {7F2043ED-2CE5-4B87-AE17-C136DE20DFA1}
 		{56DB0BAA-9156-4130-A13D-4E429E138E71} = {47299790-22B5-43BB-B678-2BEE33A555AE}
 		{FE7D5995-DADD-461F-866C-637888545B1E} = {47299790-22B5-43BB-B678-2BEE33A555AE}
+		{80253E36-D497-418D-844A-2888721D184F} = {47299790-22B5-43BB-B678-2BEE33A555AE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {84522C37-8DC0-4A05-9510-6E2740C5162A}
