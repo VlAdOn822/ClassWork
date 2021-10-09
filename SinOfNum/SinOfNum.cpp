@@ -4,15 +4,14 @@
 #include <iostream>
 #define _USE_MATH_DEFINES
 #include <math.h> 
-
 using namespace std;
 
 int main()
 {
     int a;
-    cout << "Enter angle in degrees";
+    cout << "Enter angle in degrees\n";
     cin >> a;
-    cout << a * M_PI/ 180;
+    cout << sin(a * M_PI/ 180);
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
