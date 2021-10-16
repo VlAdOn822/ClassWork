@@ -10,21 +10,21 @@ int main()
     cout << "Enter num\n";
     cin >> a;
 
-    int i = 0;
+    bool yesNo = false;
 
     if (a % 5 == 0)
     {
         cout << "5 ";
-        i++;
+        yesNo = true;
     }
 
     if (a % 3 == 0)
     {
         cout << 3;
-        i++;
+        yesNo = true;
     }
 
-    if (i == 0)
+    if (yesNo == false)
     {
         cout << "No";
     }
