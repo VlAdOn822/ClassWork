@@ -1,4 +1,4 @@
-﻿// First100numsdelyatsana5i3.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+﻿// Pow.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
 
 #include <iostream>
@@ -6,13 +6,17 @@ using namespace std;
 
 int main()
 {
-	for ( int i = 0; i <= 100; i++)
-	{
-		if (i % 3 == 0 && i % 5 == 0)
-		{
-			cout << i << endl;
-		}
-	}
+    int a, x;
+    cout << "Enter 2 nums\n";
+    cin >> a >> x;
+
+    int res = 1;
+    for (int i = 1; i <= x; i++)
+    {
+        res *= a;
+    }
+    cout << res;
+
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"

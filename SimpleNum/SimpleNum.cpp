@@ -1,4 +1,4 @@
-﻿// First100numsdelyatsana5i3.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+﻿// SimpleNum.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
 
 #include <iostream>
@@ -6,13 +6,17 @@ using namespace std;
 
 int main()
 {
-	for ( int i = 0; i <= 100; i++)
-	{
-		if (i % 3 == 0 && i % 5 == 0)
-		{
-			cout << i << endl;
-		}
-	}
+    int x;
+    cout << "Enter number\n";
+    cin >> x;
+    
+    int i;
+    for (i = 2; x % i != 0; i++)
+    {
+    }
+     
+    if (i == x) cout << "This num is prime";
+    else cout << "This num is difficult";
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"

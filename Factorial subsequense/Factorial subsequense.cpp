@@ -1,4 +1,4 @@
-﻿// First100numsdelyatsana5i3.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
+﻿// Factorial subsequense.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
 
 #include <iostream>
@@ -6,13 +6,21 @@ using namespace std;
 
 int main()
 {
-	for ( int i = 0; i <= 100; i++)
-	{
-		if (i % 3 == 0 && i % 5 == 0)
-		{
-			cout << i << endl;
-		}
-	}
+	int n;
+	cout << "Enter number\n";
+    cin >> n;
+    long sum = 0;
+
+    for (int i = 1; i <= n; i ++)
+    {
+        long fact = 1;
+        for (int j = 2; j <= i; j++)
+        {
+            fact *= j;
+        }
+        sum += fact;
+    }
+    cout << sum;
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
