@@ -1,0 +1,2 @@
+The next number for 17 is 18.
+The previous number for 17 is 16.
