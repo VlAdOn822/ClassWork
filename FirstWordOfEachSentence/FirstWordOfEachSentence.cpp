@@ -3,22 +3,37 @@
 
 #include <iostream>
 #include <string>
+#include "FirstWordOfEachSentence.h"
 using namespace std;
+
+void CoutWord(std::string& s, int& j)
+{
+	while (s[j] != ' ')
+	{
+		cout << s[j];
+		j++;
+	}
+	cout << endl;
+}
 
 int main()
 {
 	string s;
 	int pos = 0;
+	int j = 0;
+
 	cout << "Enter sentences\n";
 	getline(cin, s);
+	CoutWord(s, j);
+
 	for (int i = 0; i < s.length(); i++)
 	{
-
-		if (s[i] == '.')
+		if (s[i] == '.' && i < s.length() - 1)
 		{
-			cout << s.substr();
+			j = i + 2;
+			CoutWord(s, j);
+			continue;
 		}
-
 	}
 }
 
