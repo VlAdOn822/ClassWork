@@ -1,7 +1,7 @@
 ﻿// NumOfPalendromes.cpp : Этот файл содержит функцию "main". Здесь начинается и заканчивается выполнение программы.
 //
-
 #include <iostream>
+#include <fstream>
 #include <string>
 using namespace std;
 
@@ -9,16 +9,20 @@ int main()
 {
 	string s, word;
 	int countOfPollyndromes = 0;
-	getline(cin, s);
+	ifstream in("input.txt");
+	getline(in, s);
+	in.close();
 
 	for (int j = 0; j < s.length(); j++)
 	{
 		bool ifPalindrome = true;
-		while (s[j] >= 'A' && s[j] <= 'Z' || s[j] >= 'a' && s[j] <= 'z')
+
+		while (s[j] >= 'A' && s[j] <= 'Z' || s[j] >= 'a' && s[j] <= 'z' || s[j] >= '0' && s[j] <= '9')
 		{
 			word += s[j];
 			j++;
 		}
+
 		if (word != "")
 		{
 			for (int i = 0; i < word.length() / 2; i++)
@@ -29,6 +33,7 @@ int main()
 					break;
 				}
 			}
+
 			if (ifPalindrome)
 			{
 				countOfPollyndromes++;
@@ -36,7 +41,9 @@ int main()
 			word = "";
 		}
 	}
-	cout << countOfPollyndromes;
+	ofstream out("output.txt");
+	out << countOfPollyndromes;
+	out.close();
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"

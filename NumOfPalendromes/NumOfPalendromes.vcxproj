@@ -142,6 +142,9 @@
   <ItemGroup>
     <ClCompile Include="NumOfPalendromes.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="NumOfPalendromes.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
