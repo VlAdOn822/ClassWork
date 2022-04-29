@@ -171,6 +171,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MinutesToTheNewYear", "Minu
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LinearKeyboard", "LinearKeyboard\LinearKeyboard.vcxproj", "{7BB4E5E2-7752-4699-9562-BBD3B3754100}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EvenSubstrings", "EvenSubstrings\EvenSubstrings.vcxproj", "{124FC4F1-B748-4CB0-9283-CD8296F85627}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "23rd April", "23rd April", "{45D7238B-2926-4FFB-8B38-64DBAE2132B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -715,6 +719,14 @@ Global
 		{7BB4E5E2-7752-4699-9562-BBD3B3754100}.Release|x64.Build.0 = Release|x64
 		{7BB4E5E2-7752-4699-9562-BBD3B3754100}.Release|x86.ActiveCfg = Release|Win32
 		{7BB4E5E2-7752-4699-9562-BBD3B3754100}.Release|x86.Build.0 = Release|Win32
+		{124FC4F1-B748-4CB0-9283-CD8296F85627}.Debug|x64.ActiveCfg = Debug|x64
+		{124FC4F1-B748-4CB0-9283-CD8296F85627}.Debug|x64.Build.0 = Debug|x64
+		{124FC4F1-B748-4CB0-9283-CD8296F85627}.Debug|x86.ActiveCfg = Debug|Win32
+		{124FC4F1-B748-4CB0-9283-CD8296F85627}.Debug|x86.Build.0 = Debug|Win32
+		{124FC4F1-B748-4CB0-9283-CD8296F85627}.Release|x64.ActiveCfg = Release|x64
+		{124FC4F1-B748-4CB0-9283-CD8296F85627}.Release|x64.Build.0 = Release|x64
+		{124FC4F1-B748-4CB0-9283-CD8296F85627}.Release|x86.ActiveCfg = Release|Win32
+		{124FC4F1-B748-4CB0-9283-CD8296F85627}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -788,6 +800,7 @@ Global
 		{701B30C9-F2CD-41D6-A429-9E6E3620E311} = {4D22EC56-4C77-438E-863C-B8250CFF8697}
 		{515D4C53-2E31-49F3-8BC2-145D845C701D} = {4D22EC56-4C77-438E-863C-B8250CFF8697}
 		{7BB4E5E2-7752-4699-9562-BBD3B3754100} = {4D22EC56-4C77-438E-863C-B8250CFF8697}
+		{124FC4F1-B748-4CB0-9283-CD8296F85627} = {45D7238B-2926-4FFB-8B38-64DBAE2132B3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {84522C37-8DC0-4A05-9510-6E2740C5162A}

@@ -1,28 +1,25 @@
-// LinearKeyboard.cpp : This file contains the 'main' function. Program execution begins and ends there.
+// EvenSubstrings.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //
 
 #include <iostream>
-#include <vector>
 using namespace std;
 
 int main()
 {
-	int n;
-	cin >> n;
-	string alphabet;
-	string text;
-	for (int i = 1; i <= n ; i++)
-	{
-		cin >> alphabet;
-		cin >> text;
-		int time = 0;
-		for (int j = 0; j<text.length() - 1; j++)
-		{
-			int currentTime = alphabet.find_first_of(text[j]) - alphabet.find_first_of(text[j + 1]);
-			time += abs(currentTime);
-		}
-		cout << time<< endl;
-	}
+    int nOfNums;
+    cin >> nOfNums;
+    char* arr = new char[nOfNums];
+    for (int i = 0; i < nOfNums; i++)
+    {
+        cin >> arr[i];
+    }
+    int nOfEvenSubstrings = 0;
+    for (int i = 0; i < nOfNums; i++)
+    {
+        if(((int)arr[i]-'0') % 2 == 0)
+            nOfEvenSubstrings += (i + 1);
+    }
+    cout << nOfEvenSubstrings;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
