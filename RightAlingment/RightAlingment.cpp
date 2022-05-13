@@ -13,6 +13,7 @@ int main()
 	cin >> lOfLine;
 	int row = 1;
 	string currentWord;
+	string currentRow;
 	for (int i = 0; i <= s.length(); i++)
 	{
 		if (i <= lOfLine * row && s[i] != ' ' && i != s.length())
@@ -21,12 +22,21 @@ int main()
 		}
 		else if (i == s.length() || i <= lOfLine * row && s[i] == ' ')
 		{
-			cout << currentWord << " ";
+			currentRow += currentWord;
+			currentRow += " ";
 			currentWord = "";
 		}
 		else
 		{
-			cout << endl;
+			if (currentRow.length() < lOfLine)
+			{
+				while (currentRow.length() != lOfLine)
+				{
+					currentRow.insert(0, " ");
+				}
+			}
+			cout << currentRow << endl;
+			currentRow = "";
 			row++;
 		}
 	}
