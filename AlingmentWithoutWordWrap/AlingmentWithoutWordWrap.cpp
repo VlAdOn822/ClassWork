@@ -11,23 +11,36 @@ int main()
 	getline(cin, s);
 	int lOfLine;
 	cin >> lOfLine;
-	int row = 1;
 	string currentWord;
+	string currentLine;
+
 	for (int i = 0; i <= s.length(); i++)
 	{
-		if (i <= lOfLine * row && s[i] != ' ' && i != s.length())
+		if (currentLine.length() < lOfLine && s[i] != ' ' && i != s.length())
 		{
 			currentWord += s[i];
 		}
-		else if(i == s.length() || i <= lOfLine * row && s[i] == ' ')
+		else if (i == s.length())
 		{
-			cout << currentWord << " ";
-			currentWord = "";
+			currentLine += currentWord += " ";
+			cout << currentLine << endl;
 		}
-		else 
+		else if ( currentLine.length() + currentWord.length() <= lOfLine && s[i] == ' ')
 		{
-			cout << endl;
-			row++;
+			currentLine += currentWord += " ";
+			currentWord.clear();
+		}
+		else
+		{
+			if (currentLine.length() < lOfLine)
+				while (currentLine.length() != lOfLine)
+				{
+					currentLine.insert(currentLine.find_first_of(" "), " ");
+				}
+			cout << currentLine << endl;
+			currentLine.clear();
+			i -= currentWord.length() + 1;
+			currentWord.clear();
 		}
 	}
 }
