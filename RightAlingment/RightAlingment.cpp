@@ -42,6 +42,10 @@ int main()
 
 void LineCout(std::string& currentLine, int lOfLine)
 {
+	if (currentLine.length() - 1 == currentLine.find_last_of(" "))
+	{
+		currentLine.erase(currentLine.find_last_of(" "));
+	}
 	if (currentLine.length() < lOfLine)
 		while (currentLine.length() != lOfLine)
 		{

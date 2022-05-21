@@ -14,6 +14,7 @@ int main()
 	string currentWord;
 	string currentLine;
 
+
 	for (int i = 0; i <= s.length(); i++)
 	{
 		if (currentLine.length() < lOfLine && s[i] != ' ' && i != s.length())
@@ -25,18 +26,33 @@ int main()
 			currentLine += currentWord += " ";
 			cout << currentLine << endl;
 		}
-		else if ( currentLine.length() + currentWord.length() <= lOfLine && s[i] == ' ')
+		else if (currentLine.length() + currentWord.length() <= lOfLine && s[i] == ' ')
 		{
 			currentLine += currentWord += " ";
 			currentWord.clear();
 		}
 		else
 		{
-			if (currentLine.length() < lOfLine)
-				while (currentLine.length() != lOfLine)
+			if (currentLine.length()-1 == currentLine.find_last_of(" "))
+			{
+				currentLine.erase(currentLine.find_last_of(" "));
+			}
+			if (currentLine.length() - 1 < lOfLine)
+			{
+				int nOfSpaces = 0;
+				while (currentLine.length()  - 1 != lOfLine)
 				{
-					currentLine.insert(currentLine.find_first_of(" "), " ");
+					if (nOfSpaces <= lOfLine / 20)
+					{
+						currentLine.insert(currentLine.find_first_of(" "), " ");
+						nOfSpaces++;
+					}
+					else
+					{
+						currentLine.insert(currentLine.find_last_of(" "), " ");
+					}
 				}
+			}
 			cout << currentLine << endl;
 			currentLine.clear();
 			i -= currentWord.length() + 1;
